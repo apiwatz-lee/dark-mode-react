@@ -4,12 +4,10 @@ import dark from "../image/dark.svg";
 
 const Content = () => {
   return (
-    <main className="flex flex-row border justify-evenly items-center h-[80%]">
+    <main className="flex items-center h-[80%]">
       <div>
-        <h1 className="text-7xl text-center font-bold border">
-          Apiwat Leelasawatsuk
-        </h1>
-        <p className="text-center text-3xl font-bold mt-10 border">
+        <h1 className="text-7xl text-center font-bold">Apiwat Leelasawatsuk</h1>
+        <p className="text-center text-3xl font-bold mt-10">
           DarkMode Workshop
         </p>
       </div>
