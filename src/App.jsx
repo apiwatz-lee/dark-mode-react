@@ -1,13 +1,20 @@
 import "./App.css";
 import Title from "./components/Title";
 import Content from "./components/Content";
+import { createContext } from "react";
+import { useState } from "react";
+
+export const ThemeContext = createContext();
 
 function App() {
+  const [theme, setTheme] = useState("light");
   return (
-    <div className="h-screen">
-      <Title />
-      <Content />
-    </div>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <div className="h-screen">
+        <Title />
+        <Content />
+      </div>
+    </ThemeContext.Provider>
   );
 }
 
